@@ -46,8 +46,7 @@ class Vehicle{
     }
     // ○ getDetails()
     getDetails(){
-        return `
-        Type: ${this.type}, Make: ${this.make}, Model: ${this.model}, Year: ${this.year}, Mileage: ${this.mileage} km`.trim();
+        return `Type: ${this.type}, Make: ${this.make}, Model: ${this.model}, Year: ${this.year}, Mileage: ${this.mileage} km`.trim();
     }
 }
 
@@ -60,9 +59,9 @@ console.log(`vehicle1 details: ${vehicle1.getDetails()}`);
 const vehicle2 = new Vehicle("car", "Honda", "Mazda", 2026);
 vehicle2.drive(3)
 
-console.log(vehicle2.getDetails());
+console.log(`vehicle2 details: ${vehicle2.getDetails()}`);
 
 const vehicle3 = new Vehicle("truck", "Ford", "F-150", 2024, 25000);
 vehicle3.drive(-3)
 
-console.log(vehicle3.getDetails());
+console.log(`vehicle3 details: ${vehicle3.getDetails()}`);
